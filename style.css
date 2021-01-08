@@ -17,7 +17,7 @@ div {
   border: 1px solid #111;
 }
 
-button {
+.btn {
   padding: 1em;
   font-size: 2em;
   font-family: monospace;
@@ -25,4 +25,9 @@ button {
   border: 1px solid #111;
   color: #006;
   cursor: pointer;
+}
+
+.btn img {
+  height: 1em;
+  width: 1em;
 }

@@ -1,19 +1,32 @@
+function stop() {
+  Howler.stop()
+  document.getElementById("btn-stop").style.display = 'none'
+  document.getElementById("btn-start").style.display = 'block'
+  console.log("All sounds stopped")
+}
+
 function start() {
+  document.getElementById("btn-start").style.display = 'none'
+  document.getElementById("btn-stop").style.display = 'block'
   var text_1 = document.getElementById("xml-1").innerHTML
   var text_2 = document.getElementById("xml-2").innerHTML
   var text_3 = document.getElementById("xml-3").innerHTML
+
   var sound_1 = new Howl({
     src: ["/sounds/ambient.wav"],
     loop: true
   });
+
   var sound_2 = new Howl({
     src: ["/sounds/chime.wav"],
     loop:true
   });
+
   var sound_3 = new Howl({
     src: ["/sounds/stars.wav"],
     loop:true
   });
+
   sonify(text_1, sound_1, 1)
   sonify(text_2, sound_2, 2)
   sonify(text_3, sound_3, 3)
