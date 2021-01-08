@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+  background: #111;
+}
+
+.xml {
+  writing-mode: vertical-lr;
+  padding: 10px;
+  margin: 0px;
+  color: #006;
+}
+
+div {
+  white-space: nowrap;
+  position: block;
+  float: top;
+  border: 1px solid #111;
+}
+
+button {
+  padding: 1em;
+  font-size: 2em;
+  font-family: monospace;
+  background: #9dabdf;
+  border: 1px solid #111;
+  color: #006;
+}
